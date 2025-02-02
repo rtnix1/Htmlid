@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دانشنامهSSR</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="path/to/your/wd-logo.png" alt="WD Logo" class="logo">
+    <h1>دانشنامهSSR</h1>
+  </header>
+  <nav>
+    <a href="#home">خانه</a>
+    <a href="#search">جستجو</a>
+    <a href="#blog">وبلاگ</a>
+    <a href="#wiki">دانش‌نامه</a>
+    <a href="#register">ثبت‌نام</a>
+    <a href="#login">ورود</a>
+  </nav>
+  <main id="home">
+    <div id="search" class="search-container">
+      <h2>جستجو</h2>
+      <input type="text" placeholder="عبارت مورد نظر را وارد کنید" id="searchInput">
+      <button onclick="search()">جستجو</button>
+    </div>
+    <div id="results" class="results-container">
+      <h2>نتایج جستجو</h2>
+      <!-- نتایج جستجو در اینجا نمایش داده می‌شوند -->
+    </div>
+    <section id="register" class="form-container">
+      <h2>ثبت‌نام</h2>
+      <input type="text" placeholder="نام کاربری" id="registerUsername" required>
+      <input type="email" placeholder="ایمیل" id="registerEmail" required>
+      <input type="password" placeholder="رمز عبور" id="registerPassword" required>
+      <button onclick="register()">ثبت‌نام</button>
+    </section>
+    <section id="login" class="form-container">
+      <h2>ورود</h2>
+      <input type="text" placeholder="نام کاربری یا ایمیل" id="loginUsername" required>
+      <input type="password" placeholder="رمز عبور" id="loginPassword" required>
+      <button onclick="login()">ورود</button>
+    </section>
+    <section id="blog">
+      <h2>وبلاگ</h2>
+      <form id="blogForm">
+        <input type="text" placeholder="عنوان" id="blogTitle" required>
+        <textarea placeholder="محتوا" id="blogContent" required></textarea>
+        <input type="file" id="blogMedia" accept="image/*,video/*">
+        <button type="button" onclick="submitBlog()">ارسال</button>
+      </form>
+      <div id="blogPosts">
+        <!-- پست‌های وبلاگ در اینجا نمایش داده می‌شوند -->
+      </div>
+    </section>
+    <section id="wiki">
+      <h2>دانش‌نامه</h2>
+      <form id="wikiForm">
+        <input type="text" placeholder="عنوان" id="wikiTitle" required>
+        <textarea placeholder="محتوا" id="wikiContent" required></textarea>
+        <input type="file" id="wikiMedia" accept="image/*,video/*">
+        <button type="button" onclick="submitWiki()">ارسال</button>
+      </form>
+      <div id="wikiPages">
+        <!-- صفحات دانش‌نامه در اینجا نمایش داده می‌شوند -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 دانشنامهSSR. تمامی حقوق محفوظ است.</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  direction: rtl;
+  text-align: right;
+  color: #333;
+}
+header, footer {
+  background-color: #3F51B5; /* آبی */
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+header .logo {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+nav {
+  background-color: #303F9F; /* آبی تیره */
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 4px;
+}
+nav a:hover {
+  background-color: #C5CAE9; /* آبی روشن */
+  color: #303F9F;
+}
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-container, .form-container, .results-container, #blog, #wiki {
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+input, textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+input:focus, textarea:focus {
+  border-color: #3F51B5;
+  box-shadow: 0 0 5px rgba(63, 81, 181, 0.5);
+}
+textarea {
+  height: 120px;
+}
+button {
+  width: 100%;
+  padding: 0.7rem;
+  background: #FFEB3B; /* زرد */
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+button:hover {
+  background-color: #FBC02D; /* زرد تیره */
+}
+.result-item, #blogPosts article, #wikiPages article {
+  background: #EDE7F6; /* بنفش روشن */
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.result-item h3, #blogPosts h3, #wikiPages h3 {
+  color: #6A1B9A; /* بنفش تیره */
+}
+.result-item img, #blogPosts img, #wikiPages img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+.result-item video, #blogPosts video, #wikiPages video {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+footer p {
+  margin: 0;
+}
